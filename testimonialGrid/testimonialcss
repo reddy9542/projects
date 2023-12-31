@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918&family=Roboto:ital,wght@1,100&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 13px;
+    background: #edf2f8;
+    font-family: "Brygada";
+}
+.testimonial{
+    max-width: 1400px;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.card{
+    background: #ffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card_img{
+    border-radius: 50%;
+    border-color:  purple;
+    margin-right: 4px;
+}
+.card_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.card_bg_purple{
+    background-image: linear-gradient( #233142,#e3e3e3);
+}
+.card_education{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+    opacity: 70%;
+}
+.card_discription{
+    opacity: 40%;
+}
+.card_jonatan{
+    background-image: radial-gradient(#ebf5ee,#455d7a);
+}
+.card_jeanette{
+    background-image: radial-gradient( #a2a8d3,#e7eaf6);
+}
+.card_patrick{
+    background-image: radial-gradient(#662D8C , #ED1E79);
+}
+.card_kira{
+    background-image: radial-gradient(#EE9CA7 , #FFDDE1);
+}
+.card:nth-of-type(1){
+    grid-column: 1/3;
+}
+.card:nth-of-type(4){
+    grid-column: 2/4;
+    grid-row: 2;
+}
+.card:nth-of-type(5){
+    grid-column: 4;
+    grid-row: 1/3;
+}
+@media(max-width:768px){
+    .testimonial{
+        grid-template-columns: 1fr;
+        width: 100% ;
+    }
+    .card:nth-of-type(1){
+        grid-column: 1;
+    }
+    .card:nth-of-type(4){
+        grid-column: 1;
+        grid-row:4 ;
+    }
+    .card:nth-of-type(5){
+        grid-column: 1;
+        grid-row: 5;
+    }
+}
